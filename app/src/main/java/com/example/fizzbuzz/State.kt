@@ -1,17 +1,12 @@
 package com.example.fizzbuzz
 
-class State {
-    private val number: Int;
-    private val buffer: ArrayList<String>;
-    private val groupVisbility: HashMap<String, Boolean>;
+class State(private val number: Int) {
+    private val buffer: ArrayList<String> = ArrayList();
+    private val groupVisbility: HashMap<String, Boolean> = HashMap();
 
-    constructor(number: Int) {
-        this.number = number;
-        this.buffer = ArrayList();
-        this.groupVisbility = HashMap();
-
-        groupVisbility.put("default", true);
-        groupVisbility.put("*", true);
+    init {
+        groupVisbility.put("default", true)
+        groupVisbility.put("*", true)
     }
 
     fun groupIsVisible(group: String): Boolean {
