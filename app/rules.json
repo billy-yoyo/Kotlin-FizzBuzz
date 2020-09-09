@@ -1,0 +1,27 @@
+
+{
+  "rules": [
+    { "number": 11,
+      "groups": ["default"],
+      "actions": [ { "action": "group", "group": "default", "visible": false },
+        { "action": "group", "group": "bong", "visible": true } ] },
+    { "number": 3,
+      "groups": ["default"],
+      "actions": [ { "action": "append", "content": "Fizz" } ] },
+    { "number": 13,
+      "groups": ["default", "bong"],
+      "actions": [ { "action": "append", "content": "Fezz" } ] },
+    { "number": 5,
+      "groups": ["default"],
+      "actions": [ { "action": "append", "content": "Buzz" } ] },
+    { "number": 7,
+      "groups": ["default"],
+      "actions": [ { "action": "append", "content": "Bang" } ] },
+    { "number": 11,
+      "groups": ["bong"],
+      "actions": [ { "action": "append", "content": "Bong"} ] },
+    { "number": 17,
+      "groups": ["*"],
+      "actions": [ { "action": "reverse" } ] }
+  ]
+}
